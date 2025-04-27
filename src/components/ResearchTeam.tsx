@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamMember {
@@ -8,6 +7,36 @@ interface TeamMember {
   email: string;
   imagePath: string;
   isPrincipal?: boolean;
+}
+
+function TeamMemberCard({ member, delay }: { member: TeamMember; delay: number }) {
+  return (
+    <Card 
+      className="card-hover rounded-xl overflow-hidden opacity-0 animate-fade-in-up h-full"
+      style={{ animationDelay: `${delay}s` }}
+    >
+      <div className="aspect-square bg-muted max-h-48">
+        <img
+          src={member.imagePath}
+          alt={member.name}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <CardContent className="p-4">
+        <h4 className="font-semibold text-base mb-1">{member.name}</h4>
+        <p className="text-sm text-primary">{member.title}</p>
+        <p className="text-xs text-muted-foreground mt-1 mb-2">{member.affiliation}</p>
+        <p className="text-xs flex items-center gap-1">
+          📧 <a 
+              href={`mailto:${member.email}`} 
+              className="text-primary hover:underline transition-colors"
+            >
+              {member.email}
+            </a>
+        </p>
+      </CardContent>
+    </Card>
+  );
 }
 
 export default function ResearchTeam() {
@@ -90,16 +119,16 @@ export default function ResearchTeam() {
   ];
 
   return (
-    <section id="team" className="py-16 bg-muted/50">
+    <section id="team" className="py-12 bg-muted/50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-3">Research Team</h2>
-        <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
           Meet our international team of researchers exploring the frontiers of XR and AI
         </p>
         
-        <div className="mb-12">
+        <div className="mb-10">
           <h3 className="text-xl font-medium text-center mb-6">Principal Investigators</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {principalInvestigators.map((member, index) => (
               <TeamMemberCard key={index} member={member} delay={index * 0.1} />
             ))}
@@ -108,7 +137,7 @@ export default function ResearchTeam() {
         
         <div>
           <h3 className="text-xl font-medium text-center mb-6">Team Members</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
               <TeamMemberCard key={index} member={member} delay={(index + 2) * 0.1} />
             ))}
@@ -116,35 +145,5 @@ export default function ResearchTeam() {
         </div>
       </div>
     </section>
-  );
-}
-
-function TeamMemberCard({ member, delay }: { member: TeamMember; delay: number }) {
-  return (
-    <Card 
-      className="card-hover rounded-xl overflow-hidden opacity-0 animate-fade-in-up"
-      style={{ animationDelay: `${delay}s` }}
-    >
-      <div className="aspect-square bg-muted">
-        <img
-          src={member.imagePath}
-          alt={member.name}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <CardContent className="p-5">
-        <h4 className="font-semibold text-lg mb-1">{member.name}</h4>
-        <p className="text-sm text-primary">{member.title}</p>
-        <p className="text-sm text-muted-foreground mt-1 mb-3">{member.affiliation}</p>
-        <p className="text-sm flex items-center gap-1">
-          📧 <a 
-              href={`mailto:${member.email}`} 
-              className="text-primary hover:underline transition-colors"
-            >
-              {member.email}
-            </a>
-        </p>
-      </CardContent>
-    </Card>
   );
 }
