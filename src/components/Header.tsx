@@ -26,11 +26,11 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-background/80 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          : "bg-white/10 backdrop-blur-md"
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <div className="font-semibold text-xl">XR-AI Bridges</div>
+        <div className="font-semibold text-xl text-foreground">XR-AI Bridges</div>
         <div className="flex items-center space-x-4">
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#home" className="hover:text-primary transition-colors">Home</a>
