@@ -26,7 +26,7 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-background/80 backdrop-blur-md shadow-sm"
-          : "bg-white/10 backdrop-blur-md"
+          : "bg-white/30 backdrop-blur-md"
       }`}
     >
       <div className="container flex items-center justify-between py-4">
