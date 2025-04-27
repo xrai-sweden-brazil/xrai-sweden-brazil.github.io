@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExtendedReality, ArtificialIntelligence, HumanComputerInteraction } from "lucide-react";
+import { Glasses, Brain, MousePointerClick } from "lucide-react";
 
 interface ResearchAreaProps {
   title: string;
@@ -40,19 +40,19 @@ export default function ResearchArea() {
       title: "Extended Reality (XR)",
       description: "Exploring virtual, augmented, and mixed reality technologies for immersive experiences.",
       projectCount: 12,
-      icon: <ExtendedReality className="h-8 w-8" />,
+      icon: <Glasses className="h-8 w-8" />,
     },
     {
       title: "Artificial Intelligence",
       description: "Developing advanced AI systems for real-world applications and research.",
       projectCount: 15,
-      icon: <ArtificialIntelligence className="h-8 w-8" />,
+      icon: <Brain className="h-8 w-8" />,
     },
     {
       title: "Human-Computer Interaction",
       description: "Studying the intersection of human behavior and digital interfaces.",
       projectCount: 8,
-      icon: <HumanComputerInteraction className="h-8 w-8" />,
+      icon: <MousePointerClick className="h-8 w-8" />,
     },
   ];
 
