@@ -14,10 +14,10 @@ interface ResearchAreaProps {
 const ResearchAreaCard = ({ title, description, projectCount, icon, delay }: ResearchAreaProps) => {
   return (
     <Card 
-      className="card-hover glass-card rounded-xl overflow-hidden opacity-0 animate-fade-in-up"
+      className="card-hover glass-card rounded-xl overflow-hidden opacity-0 animate-fade-in-up h-full flex flex-col"
       style={{ animationDelay: `${delay}s` }}
     >
-      <CardContent className="p-6 pt-8">
+      <CardContent className="p-6 pt-8 flex-grow">
         <div className="mb-4 flex justify-center">
           <div className="p-3 rounded-full bg-primary/10 text-primary">
             {icon}
@@ -27,7 +27,7 @@ const ResearchAreaCard = ({ title, description, projectCount, icon, delay }: Res
         <p className="text-muted-foreground text-center mb-2">{description}</p>
         <p className="text-sm font-medium text-primary text-center">{projectCount} Active Projects</p>
       </CardContent>
-      <CardFooter className="flex justify-center p-6 pt-0">
+      <CardFooter className="flex justify-center p-6 mt-auto">
         <Button variant="outline" className="w-full">Learn More</Button>
       </CardFooter>
     </Card>
