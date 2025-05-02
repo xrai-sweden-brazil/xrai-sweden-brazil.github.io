@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamMember {
@@ -15,18 +16,18 @@ function TeamMemberCard({ member, delay }: { member: TeamMember; delay: number }
       className="card-hover rounded-xl overflow-hidden opacity-0 animate-fade-in-up h-full"
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="aspect-square bg-muted max-h-48">
+      <div className="aspect-square bg-muted">
         <img
           src={member.imagePath}
           alt={member.name}
           className="w-full h-full object-cover"
         />
       </div>
-      <CardContent className="p-4">
+      <CardContent className="p-4 text-center">
         <h4 className="font-semibold text-base mb-1">{member.name}</h4>
         <p className="text-sm text-primary">{member.title}</p>
         <p className="text-xs text-muted-foreground mt-1 mb-2">{member.affiliation}</p>
-        <p className="text-xs flex items-center gap-1">
+        <p className="text-xs flex items-center justify-center gap-1">
           📧 <a 
               href={`mailto:${member.email}`} 
               className="text-primary hover:underline transition-colors"
