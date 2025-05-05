@@ -98,7 +98,7 @@ export default function ResearchTeam() {
       name: "Prof. Debora C. Muchaluat Saade",
       title: "Professor",
       affiliation: "Fluminense Federal University",
-      email: "Contact via coordinators",
+      email: "debora@midiacom.uff.br",
       imagePath: "/placeholder.svg",
     },
     {
