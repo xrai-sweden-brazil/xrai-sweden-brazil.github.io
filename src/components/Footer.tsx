@@ -12,20 +12,14 @@ export default function Footer() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-6">
             <p className="text-sm text-muted-foreground mb-6">
-              This project is funded by Riksbankens Jubileumsfond (RJ) under the RJ Research initiation program 
+              This research network is funded by Riksbankens Jubileumsfond (RJ) under the RJ Research initiation program 
               aiming to facilitate initial scholarly processes and help define and delimit various scholarly 
               questions for future research.
             </p>
-            
-            <div className="flex justify-center mb-8">
-              <div className="h-16 w-32 bg-muted rounded flex items-center justify-center text-muted-foreground">
-                Logo Placeholder
-              </div>
-            </div>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            <p>&copy; {currentYear} XR-AI Bridges: Sweden-Brazil Research Network. All rights reserved.</p>
+            <p>&copy; {currentYear} Sweden-Brazil XR & AI Research Network. All rights reserved.</p>
           </div>
         </div>
       </div>

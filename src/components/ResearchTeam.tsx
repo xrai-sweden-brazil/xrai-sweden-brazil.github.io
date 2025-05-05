@@ -109,13 +109,6 @@ export default function ResearchTeam() {
       email: "garcia@cwi.nl",
       imagePath: "/placeholder.svg",
     },
-    {
-      name: "Dr. Mylene Farias",
-      title: "Professor",
-      affiliation: "University of Brasilia",
-      email: "Contact via coordinators",
-      imagePath: "/placeholder.svg",
-    },
   ];
 
   return (
