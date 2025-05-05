@@ -34,7 +34,7 @@ export default function Hero() {
             }
           }}
         >
-          <span>Meet the Research Network</span>
+          <span>Meet the Team</span>
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
