@@ -42,7 +42,7 @@ export default function ResearchArea() {
     },
     {
       title: "Human-Computer Interaction",
-      description: "Exploring user experience, interaction design, and emerging technologies for research and practical application across digital systems.",
+      description: "Exploring user experience, interaction design, and emerging technologies for research and practical application.",
       icon: <MousePointerClick className="h-8 w-8" />,
     },
   ];
