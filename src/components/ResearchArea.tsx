@@ -37,7 +37,7 @@ export default function ResearchArea() {
     },
     {
       title: "Artificial Intelligence",
-      description: "Developing advanced AI systems for real-world applications and research.",
+      description: "Developing advanced AI systems for practical use and research, with a particular emphasis on XR.",
       icon: <Brain className="h-8 w-8" />,
     },
     {
