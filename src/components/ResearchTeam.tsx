@@ -1,8 +1,10 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamMember {
   name: string;
   title: string;
+  secondaryTitle?: string;
   affiliation: string;
   email: string;
   imagePath: string;
@@ -25,6 +27,9 @@ function TeamMemberCard({ member, delay }: { member: TeamMember; delay: number }
       <CardContent className="p-4 text-center">
         <h4 className="font-semibold text-base mb-1">{member.name}</h4>
         <p className="text-sm text-primary">{member.title}</p>
+        {member.secondaryTitle && (
+          <p className="text-sm text-primary">{member.secondaryTitle}</p>
+        )}
         <p className="text-xs text-muted-foreground mt-1 mb-2">{member.affiliation}</p>
         <p className="text-xs flex items-center justify-center gap-1">
           📧 <a 
@@ -44,6 +49,7 @@ export default function ResearchTeam() {
     {
       name: "Dr. Asreen Rostami",
       title: "Senior Researcher",
+      secondaryTitle: "Sweden-Brazil Research Lead and Coordinator",
       affiliation: "RISE Research Institutes of Sweden",
       email: "asreen.rostami@ri.se",
       imagePath: "/placeholder.svg",
