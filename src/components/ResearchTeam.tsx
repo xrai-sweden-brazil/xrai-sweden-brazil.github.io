@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamMember {
@@ -44,7 +43,7 @@ export default function ResearchTeam() {
   const principalInvestigators: TeamMember[] = [
     {
       name: "Dr. Asreen Rostami",
-      title: "PI – Senior Researcher",
+      title: "Senior Researcher",
       affiliation: "RISE Research Institutes of Sweden",
       email: "asreen.rostami@ri.se",
       imagePath: "/placeholder.svg",
@@ -52,7 +51,7 @@ export default function ResearchTeam() {
     },
     {
       name: "Dr. Donald McMillan",
-      title: "Co-PI – Associate Professor",
+      title: "Associate Professor",
       affiliation: "Department of Computer and Systems Sciences, Stockholm University",
       email: "donald.mcmillan@dsv.su.se",
       imagePath: "/placeholder.svg",
@@ -128,7 +127,6 @@ export default function ResearchTeam() {
         </p>
         
         <div className="mb-10">
-          <h3 className="text-xl font-medium text-center mb-6">Principal Investigators</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {principalInvestigators.map((member, index) => (
               <TeamMemberCard key={index} member={member} delay={index * 0.1} />
@@ -137,7 +135,6 @@ export default function ResearchTeam() {
         </div>
         
         <div>
-          <h3 className="text-xl font-medium text-center mb-6">Team Members</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
               <TeamMemberCard key={index} member={member} delay={(index + 2) * 0.1} />
