@@ -1,17 +1,15 @@
 
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Glasses, Brain, MousePointerClick } from "lucide-react";
 
 interface ResearchAreaProps {
   title: string;
   description: string;
-  projectCount: number;
   icon: React.ReactNode;
   delay: number;
 }
 
-const ResearchAreaCard = ({ title, description, projectCount, icon, delay }: ResearchAreaProps) => {
+const ResearchAreaCard = ({ title, description, icon, delay }: ResearchAreaProps) => {
   return (
     <Card 
       className="card-hover glass-card rounded-xl overflow-hidden opacity-0 animate-fade-in-up h-full flex flex-col"
@@ -24,12 +22,8 @@ const ResearchAreaCard = ({ title, description, projectCount, icon, delay }: Res
           </div>
         </div>
         <h3 className="text-xl font-semibold mb-2 text-center">{title}</h3>
-        <p className="text-muted-foreground text-center mb-2">{description}</p>
-        <p className="text-sm font-medium text-primary text-center">{projectCount} Active Projects</p>
+        <p className="text-muted-foreground text-center">{description}</p>
       </CardContent>
-      <CardFooter className="flex justify-center p-6 mt-auto">
-        <Button variant="outline" className="w-full">Learn More</Button>
-      </CardFooter>
     </Card>
   );
 };
@@ -39,19 +33,16 @@ export default function ResearchArea() {
     {
       title: "Extended Reality (XR)",
       description: "Exploring virtual, augmented, and mixed reality technologies for immersive experiences.",
-      projectCount: 12,
       icon: <Glasses className="h-8 w-8" />,
     },
     {
       title: "Artificial Intelligence",
       description: "Developing advanced AI systems for real-world applications and research.",
-      projectCount: 15,
       icon: <Brain className="h-8 w-8" />,
     },
     {
       title: "Human-Computer Interaction",
       description: "Studying the intersection of human behavior and digital interfaces.",
-      projectCount: 8,
       icon: <MousePointerClick className="h-8 w-8" />,
     },
   ];
@@ -70,7 +61,6 @@ export default function ResearchArea() {
               key={index}
               title={area.title}
               description={area.description}
-              projectCount={area.projectCount}
               icon={area.icon}
               delay={index * 0.2}
             />
