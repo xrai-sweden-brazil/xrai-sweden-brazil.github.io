@@ -17,10 +17,10 @@ export default function Hero() {
       
       <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 animate-fade-in-up text-white">
-          XR-AI Bridges: Sweden-Brazil
+          Sweden-Brazil XR & AI Research Network
         </h1>
         <p className="text-lg md:text-xl text-center max-w-2xl mb-8 text-white/90 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          A research collaboration network exploring the frontiers of Extended Reality and Artificial Intelligence
+          Bringing together researchers, practitioners, and innovators from Sweden and Brazil, and strengthening ties with a broader international community, to advance the frontiers of Extended Reality and Artificial Intelligence.
         </p>
 
         <Button 
