@@ -23,7 +23,17 @@ export default function Hero() {
           A research collaboration network exploring the frontiers of Extended Reality and Artificial Intelligence
         </p>
 
-        <Button size="lg" className="mt-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <Button 
+          size="lg" 
+          className="mt-2 animate-fade-in-up" 
+          style={{ animationDelay: '0.4s' }}
+          onClick={() => {
+            const teamSection = document.getElementById('team');
+            if (teamSection) {
+              teamSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
           <span>Meet the Research Network</span>
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
