@@ -12,7 +12,15 @@ export default function Footer() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-6">
             <p className="text-sm text-muted-foreground mb-6">
-              This research network is funded by Riksbankens Jubileumsfond (RJ) under the RJ Research initiation program 
+              This research network is funded by Riksbankens Jubileumsfond (RJ) under the{" "}
+              <a 
+                href="https://www.rj.se/en/research/RJ-research-initiation/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline transition-colors"
+              >
+                RJ Research initiation program
+              </a>{" "}
               aiming to facilitate initial scholarly processes and help define and delimit various scholarly 
               questions for future research.
             </p>
