@@ -52,7 +52,7 @@ export default function ResearchTeam() {
       secondaryTitle: "Sweden-Brazil Research Lead and Coordinator",
       affiliation: "RISE Research Institutes of Sweden",
       email: "asreen.rostami@ri.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/Asreen_Rostami.jpg",
       isPrincipal: true
     },
     {
@@ -60,7 +60,7 @@ export default function ResearchTeam() {
       title: "Associate Professor",
       affiliation: "Department of Computer and Systems Sciences, Stockholm University",
       email: "donald.mcmillan@dsv.su.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/McMillan.jpg",
       isPrincipal: true
     },
   ];
@@ -71,49 +71,49 @@ export default function ResearchTeam() {
       title: "Assistant Professor",
       affiliation: "KTH Royal Institute of Technology",
       email: "andriim@kth.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/andrii-matviienko.jpg",
     },
     {
       name: "Dr. Luis Quintero",
       title: "Assistant Professor",
       affiliation: "Department of Computer and Systems Sciences, Stockholm University",
       email: "luis-eduardo@dsv.su.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/Luis.jpg",
     },
     {
       name: "Noak Petersson",
       title: "PhD Candidate",
       affiliation: "Department of Computer and Systems Sciences, Stockholm University",
       email: "noak.petersson@dsv.su.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/NoakPhoto.png",
     },
     {
       name: "Negin Soltani",
       title: "Research Assistant",
       affiliation: "RISE Research Institutes of Sweden",
       email: "negin.soltani@ri.se",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/NeginSoltani.JPG",
     },
     {
       name: "Prof. Debora C. Muchaluat Saade",
       title: "Professor",
       affiliation: "Fluminense Federal University",
       email: "debora@midiacom.uff.br",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/Debora.jpg",
     },
     {
       name: "Dr. Heloisa Candello",
       title: "Senior Research Scientist",
       affiliation: "IBM Research Brazil",
       email: "heloisacandello@br.ibm.com",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/Heloisa-Candello.jpg",
     },
     {
       name: "Prof. Pablo Cesar",
       title: "Professor",
       affiliation: "Centrum Wiskunde & Informatica",
       email: "garcia@cwi.nl",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/Pablo_Cesar.jpg",
     },
   ];
 
