@@ -5,7 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/xrai-sweden-brazil.github.io/" : "/", // Update this to your deployment path
+  base: "", // Use relative paths for static deployment
+  build: {
+    outDir: "docs", // Replace with your desired folder name
+  },
   server: {
     host: "::",
     port: 8080,
