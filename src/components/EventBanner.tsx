@@ -18,7 +18,7 @@ export default function EventBanner() {
             </div>
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-primary" />
-              <span>June 01-09, 2025</span>
+              <span>June 01-06, 2025</span>
             </div>
           </div>
           <div>
