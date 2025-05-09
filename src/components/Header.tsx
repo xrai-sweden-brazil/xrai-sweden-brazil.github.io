@@ -30,7 +30,7 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <div className="flex-1"></div>
+        <div className="font-semibold text-xl text-foreground">Sweden-Brazil XR & AI Research Network</div>
         <div className="flex items-center space-x-4">
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#home" className="hover:text-primary transition-colors">Home</a>
