@@ -115,6 +115,13 @@ export default function ResearchTeam() {
       email: "garcia@cwi.nl",
       imagePath: "/images/Pablo_Cesar.jpg",
     },
+    {
+      name: "Prof. Esteban Clua",
+      title: "Director",
+      affiliation: "UFF Medialab",
+      email: "esteban@ic.uff.br",
+      imagePath: "/placeholder.svg",
+    },
   ];
 
   return (
