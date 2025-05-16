@@ -120,7 +120,7 @@ export default function ResearchTeam() {
       title: "Director",
       affiliation: "UFF Medialab",
       email: "esteban@ic.uff.br",
-      imagePath: "/placeholder.svg",
+      imagePath: "/images/EstebanClua.jpg",
     },
   ];
 
