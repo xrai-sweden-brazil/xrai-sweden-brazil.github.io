@@ -1,7 +1,7 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import EventBanner from "@/components/EventBanner";
+import Schedule from "@/components/Schedule";
 import ResearchTeam from "@/components/ResearchTeam";
 import ResearchArea from "@/components/ResearchArea";
 import Footer from "@/components/Footer";
@@ -13,6 +13,7 @@ const Index = () => {
       <main>
         <Hero />
         <EventBanner />
+        <Schedule />
         <ResearchTeam />
         <ResearchArea />
       </main>
