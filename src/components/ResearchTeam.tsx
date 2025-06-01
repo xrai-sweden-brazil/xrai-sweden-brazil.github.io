@@ -58,6 +58,7 @@ export default function ResearchTeam() {
     {
       name: "Dr. Donald McMillan",
       title: "Associate Professor",
+      secondaryTitle: "Sweden-Brazil Research Lead and Coordinator",
       affiliation: "Department of Computer and Systems Sciences, Stockholm University",
       email: "donald.mcmillan@dsv.su.se",
       imagePath: "/images/McMillan.jpg",
